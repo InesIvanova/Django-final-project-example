@@ -1,0 +1,22 @@
+{% extends 'index.html'%}
+{% block 'body' %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <img style="width:100%" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/03/mobile-security-laptop-fingerprint-730x442.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+                <form style="border: 1px solid grey; margin: 0% 0%; padding: 10% 5%" method="post">
+                  <h2>Login</h2>
+                    {% csrf_token %}
+                  {{ form.as_p }}
+                  <button type="submit">Login</button>
+                    <br>
+                    <span>Do not have an account?<a style="color:orange">Sign up here</a></span>
+                </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

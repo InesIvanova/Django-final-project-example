@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+
+{% block 'body' %}
+     <div class="row">
+            <div class="col-lg-6">
+            <img src="{{furniture.image_url}}" style="width: 100%" alt="">
+        </div>
+        <div class="col-lg-6">
+            <h3>Model: {{furniture.model}}</h3>
+            <h3>Make: {{furniture.make}}</h3>
+            <h3>Year: {{furniture.year}}</h3>
+            {% if furniture.material %}
+            <h3>Material: {{furniture.material}}</h3>
+            {% endif %}
+            <h3>Price: {{furniture.price}}</h3>
+            <p>Description: {{furniture.description}}</p>
+            {% if  is_user_furniture %}
+            <a href="" class="btn btn-success">Edit</a>
+            <a href="{% url 'furniture-delete' furniture.id %}" class="btn btn-danger">Delete</a>
+            {% endif %}
+        </div>
+    </div>
+    {% if True %}
+        <div class="row">
+        <div class="col-lg-12 text-center">
+
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}
