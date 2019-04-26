@@ -26,10 +26,6 @@ class Furniture(models.Model):
         return f"{self.user} has {self.make} from {self.year}"
 
 
-class Review(models.Model):
-    author = models.OneToOneField(ProfileUser, on_delete=models.CASCADE)
-    content = models.TextField()
-    score = models.PositiveIntegerField()
-    furniture = models.ForeignKey(Furniture, on_delete=models.CASCADE)
+
 
 

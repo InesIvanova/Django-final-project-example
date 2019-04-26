@@ -1,0 +1,23 @@
+# Django-final-project-example
+
+## Urls:
+
+#### Authentication (non-authenticated)
+
+###### /auth/login/
+###### /auth/register/
+
+#### Furniture (authenticated)
+
+###### /furniture/create/
+###### /furniture/all/ (non-authenticated)
+###### /furniture/details/{pk}/
+###### /furniture/mine/
+###### /furniture/delete/{pk}/
+  
+#### Reviews (authenticated)
+
+###### /furniture/details/{pk}/reviews/  (post)
+###### /furniture/details/{pk}/reviews/{pk}/edit/
+###### /furniture/details/{pk}/reviews/{pk}/delete/
+  

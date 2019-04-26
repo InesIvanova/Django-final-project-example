@@ -5,6 +5,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Furniture
 
 from accounts.models import ProfileUser
+from reviews.models import Review
 
 
 def has_access_to_modify(current_user, furniture):
@@ -45,6 +46,8 @@ class FurnitureDetail(LoginRequiredMixin, generic.DetailView):
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(FurnitureDetail, self).get_context_data(**kwargs)
+        context['reviews'] = Review.objects.all().filter(furniture=self.get_object())
+        print(context)
         owner = context['object'].user
         current_user = self.request.user
         if has_access_to_modify(current_user, owner):

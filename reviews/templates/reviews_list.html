@@ -1,0 +1,17 @@
+
+{% block inner_content %}
+ {% if reviews %}
+
+    {% for review in reviews %}
+        <div class="row">
+           <div class="box">
+              <h4>{{review.author}}</h4>
+               <hr>
+               <p> <em> {{review.content}}</em> </p>
+           </div>
+        </div>
+    {% endfor %}
+{% else %}
+    <div class="box"> <h3>There are no reviews for this project.</div>
+{% endif %}
+{% endblock %}

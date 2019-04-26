@@ -39,10 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rolepermissions',
-    
+
     'commons',
     'accounts',
     'furnitures',
+    'reviews'
 
 ]
 

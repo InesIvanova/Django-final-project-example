@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c1f69da-ebd5-4583-96ba-aa131b1be866" name="Default Changelist" comment="" />
+    <list default="true" id="0c1f69da-ebd5-4583-96ba-aa131b1be866" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Readme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/commons/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furniture_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/furniture_shop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furnitures/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/furnitures/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furnitures/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/furnitures/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furnitures/templates/furniture_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/furnitures/templates/furniture_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furnitures/templates/furniture_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/furnitures/templates/furniture_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furnitures/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/furnitures/views.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,6 +22,87 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/furnitures/templates/furniture_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/furnitures/templates/furniture_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reviews/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/furniture_shop/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reviews/templates/reviews_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/reviews/static/reviews.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/furnitures/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reviews/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/furnitures/urls.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -23,85 +116,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/furniture_shop/settings.py">
+        <entry file="file://$PROJECT_DIR$/commons/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+            <state relative-caret-position="200">
+              <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commons/permissions.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/furnitures/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/furnitures/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1269">
-              <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/commons/templates/navbar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commons/templates/permission_denied.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/furnitures/templates/furniture_delete.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/furnitures/templates/furniture_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commons/models.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -119,12 +139,14 @@
       <find>Base</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/accounts/admin.py" />
         <option value="$PROJECT_DIR$/accounts/models.py" />
-        <option value="$PROJECT_DIR$/furnitures/admin.py" />
         <option value="$PROJECT_DIR$/furnitures/static/furniture.css" />
         <option value="$PROJECT_DIR$/furniture_shop/templates/shared/navbar.html" />
         <option value="$PROJECT_DIR$/accounts/templates/register/login.html" />
@@ -141,17 +163,23 @@
         <option value="$PROJECT_DIR$/admin/apps.py" />
         <option value="$PROJECT_DIR$/accounts/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/accounts/templates/signup.html" />
-        <option value="$PROJECT_DIR$/commons/templates/index.html" />
-        <option value="$PROJECT_DIR$/furnitures/templates/furniture_list.html" />
         <option value="$PROJECT_DIR$/furnitures/urls.py" />
-        <option value="$PROJECT_DIR$/furnitures/templates/furniture_detail.html" />
-        <option value="$PROJECT_DIR$/furniture_shop/settings.py" />
         <option value="$PROJECT_DIR$/commons/permissions.py" />
         <option value="$PROJECT_DIR$/commons/templates/permission_denied.html" />
         <option value="$PROJECT_DIR$/furnitures/templates/furniture_delete.html" />
-        <option value="$PROJECT_DIR$/furnitures/views.py" />
-        <option value="$PROJECT_DIR$/furnitures/models.py" />
         <option value="$PROJECT_DIR$/commons/templates/navbar.html" />
+        <option value="$PROJECT_DIR$/Readme" />
+        <option value="$PROJECT_DIR$/furnitures/models.py" />
+        <option value="$PROJECT_DIR$/reviews/models.py" />
+        <option value="$PROJECT_DIR$/furnitures/admin.py" />
+        <option value="$PROJECT_DIR$/reviews/admin.py" />
+        <option value="$PROJECT_DIR$/commons/templates/index.html" />
+        <option value="$PROJECT_DIR$/furnitures/templates/furniture_list.html" />
+        <option value="$PROJECT_DIR$/furniture_shop/settings.py" />
+        <option value="$PROJECT_DIR$/furnitures/views.py" />
+        <option value="$PROJECT_DIR$/reviews/templates/reviews_list.html" />
+        <option value="$PROJECT_DIR$/furnitures/templates/furniture_detail.html" />
+        <option value="$PROJECT_DIR$/reviews/static/reviews.css" />
       </list>
     </option>
   </component>
@@ -161,6 +189,7 @@
     <option name="width" value="1280" />
     <option name="height" value="528" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -172,6 +201,11 @@
             <path>
               <item name="furniture_shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="furniture_shop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="furniture_shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="furniture_shop" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="furniture_shop" type="b2602c69:ProjectViewProjectNode" />
@@ -198,6 +232,23 @@
               <item name="furniture_shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="furniture_shop" type="462c0819:PsiDirectoryNode" />
               <item name="furnitures" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="furniture_shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="furniture_shop" type="462c0819:PsiDirectoryNode" />
+              <item name="reviews" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="furniture_shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="furniture_shop" type="462c0819:PsiDirectoryNode" />
+              <item name="reviews" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="furniture_shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="furniture_shop" type="462c0819:PsiDirectoryNode" />
+              <item name="reviews" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -292,16 +343,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/furnitures/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -350,50 +391,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/furnitures/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commons/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/furnitures/templates/furniture_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/furnitures/templates/furniture_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/furniture_shop/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/commons/permissions.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -401,6 +398,74 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/furnitures/templates/furniture_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons/templates/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/furnitures/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/furnitures/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviews/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -414,40 +479,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/furnitures/templates/furniture_delete.html">
+    <entry file="file://$PROJECT_DIR$/furniture_shop/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviews/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/furnitures/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1269">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commons/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/furnitures/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="11" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commons/templates/navbar.html">
+    <entry file="file://$PROJECT_DIR$/furnitures/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+        <state relative-caret-position="249">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviews/templates/reviews_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/furnitures/templates/furniture_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/furnitures/templates/furniture_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reviews/static/reviews.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
         </state>
       </provider>
     </entry>
