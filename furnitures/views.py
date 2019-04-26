@@ -1,11 +1,12 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Furniture
 
 from accounts.models import ProfileUser
 from reviews.models import Review
+from reviews.forms import ReviewForm
 
 
 def has_access_to_modify(current_user, furniture):
@@ -47,6 +48,8 @@ class FurnitureDetail(LoginRequiredMixin, generic.DetailView):
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(FurnitureDetail, self).get_context_data(**kwargs)
         context['reviews'] = Review.objects.all().filter(furniture=self.get_object())
+        context['form'] = ReviewForm()
+        # context['form'].fields['author'].initial = self.request.user.id
         print(context)
         owner = context['object'].user
         current_user = self.request.user
@@ -55,6 +58,22 @@ class FurnitureDetail(LoginRequiredMixin, generic.DetailView):
             return context
         context['is_user_furniture'] = False
         return context
+
+    def post(self,request, pk):
+        url = f'/furniture/details/{self.get_object().id}/'
+        post_values = request.POST.copy()
+        form = ReviewForm(post_values)
+
+        if form.is_valid():
+            author = ProfileUser.objects.all().filter(user__pk=request.user.id)[0]
+            post_values['furniture'] =self.get_object()
+            review = Review(content=post_values['content'],
+                            score = post_values['score'], furniture=self.get_object(),
+                            author=author)
+            review.save()
+            return HttpResponseRedirect(url)
+        else:
+            raise Exception(form.errors)
 
 
 class FurnitureDelete(LoginRequiredMixin, generic.DeleteView):

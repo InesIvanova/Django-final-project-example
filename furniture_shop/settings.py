@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
     'rolepermissions',
 
-    'commons',
+    'common',
     'accounts',
     'furnitures',
     'reviews'

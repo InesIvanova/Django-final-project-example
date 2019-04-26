@@ -6,7 +6,7 @@ from furnitures.models import Furniture
 
 
 class Review(models.Model):
-    author = models.OneToOneField(ProfileUser, on_delete=models.CASCADE)
+    author = models.ForeignKey(ProfileUser, on_delete=models.CASCADE)
     content = models.TextField()
     score = models.PositiveIntegerField()
     furniture = models.ForeignKey(Furniture, on_delete=models.CASCADE)
