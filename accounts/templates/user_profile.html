@@ -1,0 +1,24 @@
+{% extends 'index.html' %}
+{% block 'body' %}
+    <h1>Hello, {{user.username}}!</h1>
+    <h1>Do you want to <a href="">edit</a> your profile?</h1>
+    <h5>or...</h5>
+
+<div class="row" style="margin-top:10%">
+        <div class="col-lg-6 text-center">
+          <img class="rounded-circle" src="https://www.dcu.ie/sites/default/files/iss/images/Icons_V2-01.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Change password</h2>
+          <p><a class="btn btn-secondary" href="{% url 'password_change' %}" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-6 text-center">
+          <img class="rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnhLedyw4Kh3wkzJD0ytWGHTQF01pqJ0N5l8CO9n4MmZoxF71rmQ" alt="Generic placeholder image" width="140" height="140">
+          <h2>Reset password</h2>
+          <p><a class="btn btn-secondary" href="{% url 'password_reset' %}" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3><a href="{% url 'logout' %}">Logout</a></h3>
+            </div>
+        </div>
+{% endblock %}
