@@ -3,8 +3,8 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-from .models import Furniture
-from .forms import CreateFurnitureForm
+from .models import Furniture, Material
+from .forms import CreateFurnitureForm, MaterialForm
 
 from accounts.models import ProfileUser
 from reviews.models import Review
@@ -128,6 +128,13 @@ class FurnitureEdit(LoginRequiredMixin, generic.UpdateView):
         instance = Furniture.objects.get(pk=pk)
         form = CreateFurnitureForm(request.POST or None, instance=instance)
         return render(request, 'furniture_create.html', {'form': form})
+
+
+class CreateMaterial(generic.CreateView):
+    model = Material
+    template_name = 'material_create.html'
+    form_class = MaterialForm
+    success_url = '/furniture/'
 
 
 

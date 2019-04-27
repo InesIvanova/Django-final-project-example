@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block 'body' %}
+    {% if request.user.is_superuser %}
+        <form method="post">
+            {% csrf_token %}
+            {{form}}
+            <button class="btn btn-primary" type="submit"> Add</button>
+        </form>
+    {% else %}
+    {% include 'permission_denied.html' %}
+    {% endif %}
+
+{% endblock %}

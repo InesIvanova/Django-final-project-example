@@ -1,7 +1,19 @@
 from django import forms
 from django.core.validators import MinValueValidator
 
-from .models import Furniture, Material, ProfileUser
+from .models import Furniture, Material
+
+
+class MaterialForm(forms.ModelForm):
+    name = forms.CharField(required=True, widget=forms.TextInput(
+        attrs={
+            'class': 'form-contol'
+        }
+    ))
+
+    class Meta:
+        model = Material
+        fields = ('name',)
 
 
 class CreateFurnitureForm(forms.ModelForm):

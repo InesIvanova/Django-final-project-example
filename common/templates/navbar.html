@@ -32,6 +32,9 @@
           {{user}}
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          {% if request.user.is_superuser %}
+            <a class="dropdown-item" href="{% url 'material-add' %}">Add material</a>
+          {% endif %}
           <a class="dropdown-item" href="#">Profile</a>
           <a class="dropdown-item" href="{% url 'logout' %}?next=/accounts/login/">Logout</a>
         </div>
