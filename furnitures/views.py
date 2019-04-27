@@ -122,6 +122,15 @@ class FurnitureEdit(LoginRequiredMixin, generic.UpdateView):
         form.instance.user = user
         return super().form_valid(form)
 
+    def get(self, request, pk):
+        if not has_access_to_modify(self.request.user, self.get_object()):
+            return render(request, 'permission_denied.html')
+        instance = Furniture.objects.get(pk=pk)
+        form = CreateFurnitureForm(request.POST or None, instance=instance)
+        return render(request, 'furniture_create.html', {'form': form})
+
+
+
 
 
 
