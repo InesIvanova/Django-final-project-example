@@ -111,6 +111,18 @@ class FurnitureCreate(LoginRequiredMixin, generic.CreateView):
         return super().form_valid(form)
 
 
+class FurnitureEdit(LoginRequiredMixin, generic.UpdateView):
+    model = Furniture
+    form_class = CreateFurnitureForm
+    template_name = 'furniture_create.html'
+    success_url = '/furniture/'
+
+    def form_valid(self, form):
+        user = ProfileUser.objects.all().filter(user__pk=self.request.user.id)[0]
+        form.instance.user = user
+        return super().form_valid(form)
+
+
 
 
 

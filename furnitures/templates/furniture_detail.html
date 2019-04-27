@@ -14,7 +14,7 @@
             <h3>Price: {{furniture.price}}</h3>
             <p>Description: {{furniture.description}}</p>
             {% if  is_user_furniture %}
-            <a href="" class="btn btn-success">Edit</a>
+            <a href="{% url 'furniture-edit' furniture.id %}" class="btn btn-success">Edit</a>
             <a href="{% url 'furniture-delete' furniture.id %}" class="btn btn-danger">Delete</a>
             {% endif %}
         </div>
