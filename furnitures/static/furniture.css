@@ -15,3 +15,9 @@
     color: ligthgrey;
     border: 1px solid grey;
 }
+
+.furniture-form {
+    border: 1px solid grey;
+    padding: 5% 6%;
+    margin: 5% 0%;
+}

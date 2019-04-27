@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block 'body' %}
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+         <form method="post" class="furniture-form">
+             {% csrf_token %}
+            {{form}}
+            <button class="btn btn-primary" type="submit">Create</button>
+         </form>
+    </div>
+    <div class="col-lg-3"></div>
+</div>
+{% endblock %}

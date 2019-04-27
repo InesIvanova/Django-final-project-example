@@ -2,7 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
+
 from .models import Furniture
+from .forms import CreateFurnitureForm
 
 from accounts.models import ProfileUser
 from reviews.models import Review
@@ -66,10 +68,13 @@ class FurnitureDetail(LoginRequiredMixin, generic.DetailView):
 
         if form.is_valid():
             author = ProfileUser.objects.all().filter(user__pk=request.user.id)[0]
-            post_values['furniture'] =self.get_object()
-            review = Review(content=post_values['content'],
-                            score = post_values['score'], furniture=self.get_object(),
-                            author=author)
+            post_values['furniture'] = self.get_object()
+            review = Review(
+                content = post_values['content'],
+                score = post_values['score'],
+                furniture=self.get_object(),
+                author=author
+            )
             review.save()
             return HttpResponseRedirect(url)
         else:
@@ -92,6 +97,24 @@ class FurnitureDelete(LoginRequiredMixin, generic.DeleteView):
         furniture = self.get_object()
         furniture.delete()
         return HttpResponseRedirect('/furniture/')
+
+
+class FurnitureCreate(LoginRequiredMixin, generic.CreateView):
+    model = Furniture
+    template_name = 'furniture_create.html'
+    form_class = CreateFurnitureForm
+    success_url = '/furniture/'
+
+    def form_valid(self, form):
+        user = ProfileUser.objects.all().filter(user__pk=self.request.user.id)[0]
+        form.instance.user = user
+        return super().form_valid(form)
+
+
+
+
+
+
 
 
 
