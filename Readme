@@ -14,10 +14,8 @@
 ###### /furniture/details/{pk}/
 ###### /furniture/mine/
 ###### /furniture/delete/{pk}/
+###### /furniture/edit/{pk}/   (post method creates new review)
+###### /furniture/material/ (admin users)
   
-#### Reviews (authenticated)
 
-###### /furniture/details/{pk}/reviews/  (post)
-###### /furniture/details/{pk}/reviews/{pk}/edit/
-###### /furniture/details/{pk}/reviews/{pk}/delete/
   
