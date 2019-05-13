@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
 from django.views import generic
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, AccessMixin
 
 from .models import Furniture, Material
 from .forms import CreateFurnitureForm, MaterialForm
@@ -70,8 +70,8 @@ class FurnitureDetail(LoginRequiredMixin, generic.DetailView):
             author = ProfileUser.objects.all().filter(user__pk=request.user.id)[0]
             post_values['furniture'] = self.get_object()
             review = Review(
-                content = post_values['content'],
-                score = post_values['score'],
+                content=post_values['content'],
+                score=post_values['score'],
                 furniture=self.get_object(),
                 author=author
             )
@@ -84,7 +84,6 @@ class FurnitureDetail(LoginRequiredMixin, generic.DetailView):
 class FurnitureDelete(LoginRequiredMixin, generic.DeleteView):
     model = Furniture
     login_url = 'accounts/login/'
-    context_object_name = 'funrniture'
 
     def get(self, request, pk):
         if not has_access_to_modify(self.request.user, self.get_object()):

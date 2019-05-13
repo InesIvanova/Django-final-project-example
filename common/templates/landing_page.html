@@ -1,13 +1,36 @@
 {% extends 'index.html' %}
 
 {% block 'body' %}
-          <div class="inner cover">
-            <h1 class="cover-heading">Welcome to furniture shop</h1>
-            <p class="lead">To get maximum of our site - <br><a href="{% url 'login' %}" class="btn btn-lg btn-secondary">sign in</a></p>
-            <p class="lead"> Do not have an account? <br>
-              <a href="{% url 'signup' %}" class="btn btn-lg btn-secondary">sign up</a>
-            </p>
+<div class="jumbotron parent">
+        <img style="width: 100%" src="https://static1.squarespace.com/static/52882bede4b0ce5ab826a892/t/52b3bc74e4b0d40f9d0312c6/1387510901487/ikea+karlstad+corner+sofa+korndal+med+blue.png" alt="">
+    <div class="absolute">
+        <h1 class="display-4">Welcome to furniture shop</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <div class="inner cover">
+    <h1 class="cover-heading"></h1>
+      <div class="row">
+          <div class="col-lg-6">
+              <p class="lead">To get maximum of our site - <br><a href="{% url 'login' %}" class="btn btn-lg btn-secondary">sign in</a></p>
           </div>
+          <div class="col-lg-6">
+               <p class="lead"> Do not have an account? <br>
+                  <a href="{% url 'signup' %}" class="btn btn-lg btn-secondary">sign up</a>
+                </p>
+          </div>
+      </div>
+
+  </div>
+    </div>
+     {% if request.user.is_superuser %}
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button class="btn btn-success" type="submit">Upload</button>
+    </form>
+     {%  endif %}
+</div>
 
 
 {% endblock %}
